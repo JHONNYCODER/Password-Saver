@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    tools:context="com.moswagcytex.samplezark.Registration">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/password_edt"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/background_round_corner_edittext"
+            android:ems="10"
+            android:hint="Enter PIN"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></EditText>
+
+        <EditText
+            android:id="@+id/securityhint_edt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_round_corner_edittext"
+            android:ems="10"
+            android:hint="Enter Securty Key"
+            android:inputType="number"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/register_btn"
+            app:layout_constraintEnd_toEndOf="@+id/repassword_edt"
+            app:layout_constraintStart_toStartOf="@+id/repassword_edt"
+            app:layout_constraintTop_toBottomOf="@+id/repassword_edt"></EditText>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_round_corner_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/register_btn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/register_btn"
+            app:layout_constraintTop_toBottomOf="@+id/register_btn" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/showpassword"
+            android:textColor="#1C1C1C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edt" />
+
+        <EditText
+            android:id="@+id/repassword_edt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_round_corner_edittext"
+            android:ems="10"
+            android:hint="Re-Enter PIN"
+            android:inputType="numberPassword"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/securityhint_edt"
+            app:layout_constraintEnd_toEndOf="@+id/password_edt"
+            app:layout_constraintStart_toStartOf="@+id/password_edt"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/register"
+            app:layout_constraintBottom_toTopOf="@+id/cancel_btn"
+            app:layout_constraintEnd_toEndOf="@+id/securityhint_edt"
+            app:layout_constraintStart_toStartOf="@+id/securityhint_edt"
+            app:layout_constraintTop_toBottomOf="@+id/securityhint_edt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

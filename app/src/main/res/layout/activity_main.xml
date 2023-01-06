@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="0dp"
+    android:background="#ffff"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintBottom_toTopOf="@+id/e_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Title"
+        android:inputType="text"
+        android:textColorHint="#3700B3"
+        app:layout_constraintBottom_toTopOf="@+id/e_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#3700B3"
+        app:layout_constraintBottom_toTopOf="@+id/e_username"
+        app:layout_constraintEnd_toEndOf="@+id/e_name"
+        app:layout_constraintStart_toStartOf="@+id/e_name"
+        app:layout_constraintTop_toBottomOf="@+id/e_name" />
+
+    <EditText
+        android:id="@+id/e_username"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="#3700B3"
+        app:layout_constraintBottom_toTopOf="@+id/e_phnumber"
+        app:layout_constraintEnd_toEndOf="@+id/e_email"
+        app:layout_constraintStart_toStartOf="@+id/e_email"
+        app:layout_constraintTop_toBottomOf="@+id/e_email" />
+
+
+    <EditText
+        android:id="@+id/e_phnumber"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColorHint="#3700B3"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/e_username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/e_username"
+        app:layout_constraintTop_toBottomOf="@+id/e_username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="text"
+        android:textColorHint="#3700B3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
+        app:layout_constraintEnd_toEndOf="@+id/e_phnumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/e_phnumber"
+        app:layout_constraintTop_toBottomOf="@+id/e_phnumber" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/viewdata"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/viewdata"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="View Saved data"
+        app:layout_constraintBottom_toTopOf="@+id/clear_data"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+    <Button
+        android:id="@+id/clear_data"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/red_btn_bc"
+        android:text="Clear All Fields"
+        app:layout_constraintEnd_toEndOf="@+id/viewdata"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewdata"
+        app:layout_constraintTop_toBottomOf="@+id/viewdata" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

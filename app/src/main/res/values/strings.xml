@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Save Your Passwords</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Login">Already Register? Login</string>
+    <string name="password">PIN Code</string>
+    <string name="repassword">Re Enter PIN</string>
+    <string name="securityhint">Security Hint</string>
+    <string name="forgetpassword">Forget PIN!</string>
+    <string name="Defaultpin">300611</string>
+    <string name="entersecurityhint">Enter Your Security Hint Here</string>
+
+    <string name="register">Register</string>
+    <string name="getpassword">Get PIN</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="showpassword">Show PIN</string>
+    <string name="enterpassword">Enter PIN</string>
+    <string name="add">ADD</string>
+    <string name="accountpassword">ACCOUNT PASSWORD</string>
+    <string name="addphoto">Select Account Picture</string>
+    <string name="delete">DELETE</string>
+    <string name="accountname">Account Name</string>
+    <string name="email">Email</string>
+    <string name="title_activity_nav_d">NavD</string>
+    <string name="Description">This is my example App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

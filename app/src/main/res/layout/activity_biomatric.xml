@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".biomatric">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="414dp"
+        android:layout_height="272dp"
+        android:background="@drawable/card_view"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/use_finger"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/securityhint_edt3"
+            app:layout_constraintEnd_toEndOf="@+id/securityhint_edt2"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/securityhint_edt2"
+            app:layout_constraintTop_toBottomOf="@+id/securityhint_edt2"
+            app:srcCompat="@drawable/ic_baseline_fingerprint_24" />
+
+        <TextView
+            android:id="@+id/securityhint_edt3"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="User Finger print for Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/use_finger"
+            app:layout_constraintStart_toStartOf="@+id/use_finger"
+            app:layout_constraintTop_toBottomOf="@+id/use_finger"></TextView>
+
+        <Button
+            android:id="@+id/use_pin"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_round_corner_edittext"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Use PIN"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/securityhint_edt2"
+            android:layout_width="235dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Save Your Credential Securely"
+            app:layout_constraintBottom_toTopOf="@+id/use_finger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/firstpage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
